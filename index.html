@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocuSpec AI — Instant Architecture & API Specs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">DocuSpec<span>.ai</span></a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta" class="btn btn-primary btn-sm">Get Early Access</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">v2.0 Now Live • Built for Engineering Teams</span>
+          <h1>Turn Raw Codebases into Living System Docs.</h1>
+          <p>
+            Stop writing stale Markdown by hand. Connect your repository and automatically generate architecture diagrams, API references, and onboarding guides in seconds.
+          </p>
+          <div class="hero-actions">
+            <a href="#cta" class="btn btn-primary">Start Free Workspace</a>
+            <a href="#workflow" class="btn btn-secondary">See Live Demo</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>10x</strong><span>Faster Onboarding</span></div>
+            <div><strong>99.4%</strong><span>Schema Accuracy</span></div>
+            <div><strong>Zero</strong><span>Config Overhead</span></div>
+          </div>
+        </div>
+
+        <!-- Visual Mockup Card -->
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="file-name">architecture-sync.yml</span>
+            </div>
+            <pre><code><span class="kwd">pipeline</span>: doc-generator
+<span class="kwd">trigger</span>: [push, pull_request]
+<span class="kwd">outputs</span>:
+  - mermaid_erd: <span class="str">"./docs/schema.md"</span>
+  - openapi_spec: <span class="str">"./docs/api.json"</span>
+<span class="kwd">status</span>: <span class="ok">✓ Synced in 1.4s</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Engineered for Modern Stacks</h2>
+          <p>Everything you need to keep documentation synchronized with every Git commit.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="icon-box">⚡</div>
+            <h3>Instant AST Parsing</h3>
+            <p>Analyzes TypeScript, Python, and C++ repositories directly to extract exact function signatures and dependencies.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box">📐</div>
+            <h3>Auto-Mermaid Diagrams</h3>
+            <p>Generates clean database ERDs and microservice flowcharts automatically whenever your schema evolves.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box">🔒</div>
+            <h3>Zero-Retention Privacy</h3>
+            <p>Your source code is processed in ephemeral memory containers and never stored or used for model training.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="workflow" class="workflow">
+      <div class="container">
+        <div class="section-header">
+          <h2>From Repo to Docs in Three Steps</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-item">
+            <span class="step-num">01</span>
+            <h3>Connect GitHub</h3>
+            <p>Install our lightweight GitHub App on selected repositories with read-only permissions.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">02</span>
+            <h3>Map Architecture</h3>
+            <p>Our engine builds a dependency graph of your routes, database models, and services.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">03</span>
+            <h3>Auto-Publish</h3>
+            <p>Docs update automatically on every merged PR—hosted cleanly or exported as Markdown.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta-section">
+      <div class="container cta-box">
+        <h2>Ready to automate your documentation?</h2>
+        <p>Join 2,500+ developers shipping cleaner repositories today.</p>
+        <form class="cta-form" id="ctaForm">
+          <input type="email" id="emailInput" placeholder="Enter your work or student email" required />
+          <button type="submit" class="btn btn-primary">Request Invite</button>
+        </form>
+        <p class="form-feedback" id="formFeedback"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 DocuSpec AI. Built for Internship Task 1.</p>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
